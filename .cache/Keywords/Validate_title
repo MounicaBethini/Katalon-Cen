@@ -1,0 +1,15 @@
+{
+  "keywordFileContentHash": "25C850095DDF6762BB6ED2FA196BD4B7",
+  "keywordClasses": [
+    {
+      "name": "Validate_title",
+      "keywordMethods": [
+        {
+          "name": "getPageTitle",
+          "parameters": []
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

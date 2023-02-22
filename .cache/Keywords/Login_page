@@ -1,20 +1,9 @@
 {
-  "keywordFileContentHash": "111F22BE09D00317FDB5FF67FBD2459E",
+  "keywordFileContentHash": "C072F9AC2CA5935EFFFB40D70D76A94A",
   "keywordClasses": [
     {
       "name": "Login_page",
-      "keywordMethods": [
-        {
-          "name": "navigate_to_LoginPage",
-          "parameters": [],
-          "javadoc": ""
-        },
-        {
-          "name": "loginTOTheApplication",
-          "parameters": [],
-          "javadoc": ""
-        }
-      ]
+      "keywordMethods": []
     }
   ],
   "javadocParsed": true

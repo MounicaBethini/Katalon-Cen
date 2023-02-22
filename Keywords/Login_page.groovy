@@ -3,6 +3,7 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import com.kms.katalon.core.annotation.BeforeTestCase
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.checkpoint.CheckpointFactory
@@ -39,7 +40,7 @@ import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 class Login_page {
 
-	@Keyword
+	@BeforeTestCase
 	def navigate_to_LoginPage() {
 
 		WebUI.openBrowser("https://demo.centerity78/#cgi-bin/dashboard.cgi?action=nologo")
@@ -47,7 +48,7 @@ class Login_page {
 		WebUI.click(findTestObject('Object Repository/Connection_Private/advance_button'))
 		WebUI.click(findTestObject('Object Repository/Connection_Private/Proceed_B'))
 	}
-	@Keyword
+	@BeforeTestCase
 	def loginTOTheApplication() {
 
 		WebUI.sendKeys(findTestObject('Object Repository/Login_page/Username_TextBox'), 'edge')
