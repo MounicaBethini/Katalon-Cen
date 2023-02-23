@@ -20,7 +20,8 @@ import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'Login_page.navigate_to_LoginPage'()
 CustomKeywords.'Login_page.loginTOTheApplication'()
-	
+CustomKeywords.'Policy_Run.navigate_TO_AdminTab'()
+CustomKeywords.'Policy_Run.run_policyForAllCollectors'()
 	
 	
 	

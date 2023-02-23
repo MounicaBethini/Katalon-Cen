@@ -54,5 +54,6 @@ class Login_page {
 		WebUI.sendKeys(findTestObject('Object Repository/Login_page/Username_TextBox'), 'edge')
 		WebUI.sendKeys(findTestObject('Object Repository/Login_page/password_textbox'), '1')
 		WebUI.click(findTestObject('Object Repository/Login_page/login_B'))
+		WebUI.waitForPageLoad(5)
 	}
 }
