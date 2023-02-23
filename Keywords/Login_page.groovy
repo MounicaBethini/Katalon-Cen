@@ -39,20 +39,11 @@ import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 class Login_page {
-
-	@BeforeTestCase
-	def navigate_to_LoginPage() {
-
-		WebUI.openBrowser("https://demo.centerity78/#cgi-bin/dashboard.cgi?action=nologo")
-		WebUI.maximizeWindow()
-		WebUI.click(findTestObject('Object Repository/Connection_Private/advance_button'))
-		WebUI.click(findTestObject('Object Repository/Connection_Private/Proceed_B'))
-	}
-	@BeforeTestCase
+		
+	@Keyword
 	def loginTOTheApplication() {
-
-		WebUI.sendKeys(findTestObject('Object Repository/Login_page/Username_TextBox'), 'edge')
-		WebUI.sendKeys(findTestObject('Object Repository/Login_page/password_textbox'), '1')
+		WebUI.sendKeys(findTestObject('Object Repository/Login_page/Username_TextBox'), GlobalVariable.userName)
+		WebUI.sendKeys(findTestObject('Object Repository/Login_page/password_textbox'), GlobalVariable.password)
 		WebUI.click(findTestObject('Object Repository/Login_page/login_B'))
 		WebUI.waitForPageLoad(5)
 	}

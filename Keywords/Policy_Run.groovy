@@ -21,50 +21,48 @@ import internal.GlobalVariable
 public class Policy_Run {
 	@Keyword
 	def navigate_TO_AdminTab() {
-//Click on Admin tab
+		//Click on Admin tab
 		WebUI.click(findTestObject('Object Repository/PageNavigation/Naviate_to_admintab'))
-//Click on Management
+		//Click on Management
 		WebUI.click(findTestObject('Object Repository/PageNavigation/NaviateTO_management'))
-		
-//Click on Collectors
+		//Click on Collectors
 		WebUI.click(findTestObject('Object Repository/PageNavigation/Navigate_to_collector'))
 	}
 	@Keyword
 	def run_policyForAllCollectors() {
-//Switch to frame
+		//Switch to frame
 		WebUI.switchToFrame(findTestObject('Object Repository/PageNavigation/SwitchFrame'), 2, FailureHandling.STOP_ON_FAILURE)
 		System.out.println(WebUI.getText(findTestObject('Object Repository/SelectAllCollector/Total_collectors_count')).trim())
 		def Total_collectors = WebUI.getText(findTestObject('Object Repository/SelectAllCollector/Total_collectors_count')).trim()
 		def Expected_result = "0 Collectors"
 		//Check if any agents connected to centerity or not
-	if(Expected_result.equals(Total_collectors)) {
-		
-		System.out.println("Please connect at least one agent to centerity")
-		
+		if(Expected_result.equals(Total_collectors)) {
+
+			println("Please connect at least one agent to centerity")
+
 		}
-		
-	else {
-		
-		System.out.println("You have "+ Total_collectors)
-		System.out.println("Running policy.........")
-		
-		WebUI.click(findTestObject('Object Repository/SelectAllCollector/SelectALlCollector'))
-		WebUI.click(findTestObject('Object Repository/SelectAllCollector/Run_policy'))
-		
-		WebUI.click(findTestObject('Object Repository/SelectAllCollector/Run_poilicy_button'))
-		
-		def POlicy_sucess_bool = WebUI.waitForElementVisible(findTestObject('Object Repository/SelectAllCollector/Policy_success'), 7)
-		
-		if(POlicy_sucess_bool.equals(true))
-		{
-			
-			System.out.println("Policy Run completed sucessfully")
-		//def String = WebUI.getCSSValue(null, null)
-		
-		//System.out.println(WebUI.waitForElementVisible(findTestObject('Object Repository/SelectAllCollector/Policy_success'), 7))
+
+		else {
+
+			println("You have "+ Total_collectors)
+			println("Running policy.........")
+
+			WebUI.click(findTestObject('Object Repository/SelectAllCollector/SelectALlCollector'))
+			WebUI.click(findTestObject('Object Repository/SelectAllCollector/Run_policy'))
+
+			WebUI.click(findTestObject('Object Repository/SelectAllCollector/Run_poilicy_button'))
+
+			def POlicy_sucess_bool = WebUI.waitForElementVisible(findTestObject('Object Repository/SelectAllCollector/Policy_success'), 7)
+
+			if(POlicy_sucess_bool.equals(true))
+			{
+				System.out.println("Policy Run completed sucessfully")
+				//def String = WebUI.getCSSValue(null, null)
+
+				//System.out.println(WebUI.waitForElementVisible(findTestObject('Object Repository/SelectAllCollector/Policy_success'), 7))
 			}
-			
+
 		}
-		
-	}	
+
+	}
 }
