@@ -1,31 +1,31 @@
 {
-  "keywordFileContentHash": "E176E000BFC2D2579D402CFA56D02983",
+  "keywordFileContentHash": "7E9DBF7E4029A9A88D732AE1F4F1A6F1",
   "keywordClasses": [
     {
       "name": "Navigations",
       "keywordMethods": [
         {
           "name": "navigate_TO_AdminTab",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "navigateToManagamenet",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "navigateToCollectorPage",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "navigateToDiscoveryPage",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
+        },
+        {
+          "name": "switchToFrame",
+          "parameters": []
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

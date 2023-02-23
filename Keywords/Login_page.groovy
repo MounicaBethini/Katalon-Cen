@@ -39,7 +39,7 @@ import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 class Login_page {
-		
+
 	@Keyword
 	def loginTOTheApplication() {
 		WebUI.sendKeys(findTestObject('Object Repository/Login_page/Username_TextBox'), GlobalVariable.userName)

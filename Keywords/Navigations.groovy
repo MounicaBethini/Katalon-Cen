@@ -29,15 +29,19 @@ public class Navigations {
 		//Click on Management
 		WebUI.click(findTestObject('Object Repository/PageNavigation/NaviateTO_management'))
 	}
-	
+
 	@Keyword
 	def navigateToCollectorPage() {
 		//Click on Collectors
 		WebUI.click(findTestObject('Object Repository/PageNavigation/Navigate_to_collector'))
 	}
-	
+
 	@Keyword
 	def navigateToDiscoveryPage() {
 		WebUI.click(findTestObject('Object Repository/PageNavigation/discoveryPage'))
+	}
+	@Keyword
+	def switchToFrame() {
+		WebUI.switchToFrame(findTestObject('Object Repository/PageNavigation/SwitchFrame'), 2, FailureHandling.STOP_ON_FAILURE)
 	}
 }

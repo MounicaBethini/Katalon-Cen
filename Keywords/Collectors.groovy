@@ -24,8 +24,8 @@ public class Collectors {
 	def runPolicyForAllCollectors() {
 		//Switch to frame
 		WebUI.switchToFrame(findTestObject('Object Repository/PageNavigation/SwitchFrame'), 2, FailureHandling.STOP_ON_FAILURE)
-		System.out.println(WebUI.getText(findTestObject('Object Repository/SelectAllCollector/Total_collectors_count')).trim())
-		def Total_collectors = WebUI.getText(findTestObject('Object Repository/SelectAllCollector/Total_collectors_count')).trim()
+		System.out.println(WebUI.getText(findTestObject('Object Repository/CollectorPage/Total_collectors_count')).trim())
+		def Total_collectors = WebUI.getText(findTestObject('Object Repository/CollectorPage/Total_collectors_count')).trim()
 		def Expected_result = "0 Collectors"
 		//Check if any agents connected to centerity or not
 		if(Expected_result.equals(Total_collectors)) {
@@ -39,19 +39,19 @@ public class Collectors {
 			println("You have "+ Total_collectors)
 			println("Running policy.........")
 
-			WebUI.click(findTestObject('Object Repository/SelectAllCollector/SelectALlCollector'))
-			WebUI.click(findTestObject('Object Repository/SelectAllCollector/Run_policy'))
+			WebUI.click(findTestObject('Object Repository/CollectorPage/SelectALlCollector'))
+			WebUI.click(findTestObject('Object Repository/CollectorPage/Run_policy'))
 
-			WebUI.click(findTestObject('Object Repository/SelectAllCollector/Run_poilicy_button'))
+			WebUI.click(findTestObject('Object Repository/CollectorPage/Run_poilicy_button'))
 
-			def POlicy_sucess_bool = WebUI.waitForElementVisible(findTestObject('Object Repository/SelectAllCollector/Policy_success'), 7)
+			def POlicy_sucess_bool = WebUI.waitForElementVisible(findTestObject('Object Repository/CollectorPage/Policy_success'), 7)
 
 			if(POlicy_sucess_bool.equals(true))
 			{
 				System.out.println("Policy Run completed sucessfully")
 				//def String = WebUI.getCSSValue(null, null)
 
-				//System.out.println(WebUI.waitForElementVisible(findTestObject('Object Repository/SelectAllCollector/Policy_success'), 7))
+				//System.out.println(WebUI.waitForElementVisible(findTestObject('Object Repository/CollectorPage/Policy_success'), 7))
 			}
 
 		}
