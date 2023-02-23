@@ -18,18 +18,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
 
-public class Policy_Run {
+public class Collectors {
+
 	@Keyword
-	def navigate_TO_AdminTab() {
-		//Click on Admin tab
-		WebUI.click(findTestObject('Object Repository/PageNavigation/Naviate_to_admintab'))
-		//Click on Management
-		WebUI.click(findTestObject('Object Repository/PageNavigation/NaviateTO_management'))
-		//Click on Collectors
-		WebUI.click(findTestObject('Object Repository/PageNavigation/Navigate_to_collector'))
-	}
-	@Keyword
-	def run_policyForAllCollectors() {
+	def runPolicyForAllCollectors() {
 		//Switch to frame
 		WebUI.switchToFrame(findTestObject('Object Repository/PageNavigation/SwitchFrame'), 2, FailureHandling.STOP_ON_FAILURE)
 		System.out.println(WebUI.getText(findTestObject('Object Repository/SelectAllCollector/Total_collectors_count')).trim())

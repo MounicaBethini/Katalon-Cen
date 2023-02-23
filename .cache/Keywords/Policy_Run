@@ -1,18 +1,9 @@
 {
-  "keywordFileContentHash": "03FD8F1BA71B2DD4A610CA91D19326E2",
+  "keywordFileContentHash": "D41D8CD98F00B204E9800998ECF8427E",
   "keywordClasses": [
     {
       "name": "Policy_Run",
-      "keywordMethods": [
-        {
-          "name": "navigate_TO_AdminTab",
-          "parameters": []
-        },
-        {
-          "name": "run_policyForAllCollectors",
-          "parameters": []
-        }
-      ]
+      "keywordMethods": []
     }
   ],
   "javadocParsed": false

@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "419CF3AF07F12B4BCECF09A401BB78AF",
+  "keywordClasses": [
+    {
+      "name": "Collectors",
+      "keywordMethods": [
+        {
+          "name": "runPolicyForAllCollectors",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

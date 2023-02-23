@@ -1,0 +1,31 @@
+{
+  "keywordFileContentHash": "E176E000BFC2D2579D402CFA56D02983",
+  "keywordClasses": [
+    {
+      "name": "Navigations",
+      "keywordMethods": [
+        {
+          "name": "navigate_TO_AdminTab",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "navigateToManagamenet",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "navigateToCollectorPage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "navigateToDiscoveryPage",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

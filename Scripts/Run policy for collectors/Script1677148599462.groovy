@@ -19,8 +19,10 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 CustomKeywords.'Login_page.loginTOTheApplication'()
-CustomKeywords.'Policy_Run.navigate_TO_AdminTab'()
-CustomKeywords.'Policy_Run.run_policyForAllCollectors'()
+CustomKeywords.'Navigations.navigate_TO_AdminTab'()
+CustomKeywords.'Navigations.navigateToManagamenet'()
+CustomKeywords.'Navigations.navigateToCollectorPage'()
+CustomKeywords.'Collectors.runPolicyForAllCollectors'()
 	
 	
 	
