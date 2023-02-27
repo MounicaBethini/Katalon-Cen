@@ -46,4 +46,17 @@ public class Hostpage {
 
 		WebUI.click(findTestObject('Object Repository/Quickhost/saveQuickHost'))
 	}
+	@Keyword
+	def verifyHostCreated() {
+		
+		if(WebUI.verifyElementPresent(findTestObject('Object Repository/Quickhost/createdQuickHostName'), 5).equals(true)) {
+			
+			println('A new Quick host created')
+		}
+		
+		else {
+			
+			println('Quick host is not created')
+		}
+	}
 }

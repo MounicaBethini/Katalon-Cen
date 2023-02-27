@@ -1,26 +1,27 @@
 {
-  "keywordFileContentHash": "312739E257F68266A56149E1154C4EEB",
+  "keywordFileContentHash": "561B34CA69C91AC3B0ACFF4B3E1E6C43",
   "keywordClasses": [
     {
       "name": "Hostpage",
       "keywordMethods": [
         {
           "name": "clickonNewQuickHostButton",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "enterDatatoQuickHost",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "saveQuickHost",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
+        },
+        {
+          "name": "verifyHostCreated",
+          "parameters": []
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
