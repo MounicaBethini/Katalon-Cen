@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>newQuickhostbutton</name>
+   <name>hostAlias</name>
    <tag></tag>
-   <elementGuidId>1b4611fa-2af2-4554-8d25-4f4980f083de</elementGuidId>
+   <elementGuidId>acf5f3e3-68c2-4a61-b3f2-bcd6d0dfc431</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[text()=' Quick Host']</value>
+         <value>//input[@id='alias']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

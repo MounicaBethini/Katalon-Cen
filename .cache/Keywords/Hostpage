@@ -1,27 +1,66 @@
 {
-  "keywordFileContentHash": "561B34CA69C91AC3B0ACFF4B3E1E6C43",
+  "keywordFileContentHash": "D742F7A46864ADD7E95E91648A588C66",
   "keywordClasses": [
     {
       "name": "Hostpage",
       "keywordMethods": [
         {
           "name": "clickonNewQuickHostButton",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "clickOnNewHostButton",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "createNewHost",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "enterHostName",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "enterHostDesc",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "enterIpAdd",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "enterMetricCollector",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "enterHostGroupList",
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "enterDatatoQuickHost",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "saveQuickHost",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "verifyHostCreated",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>createdQuickHostName</name>
+   <name>manualHostButton</name>
    <tag></tag>
-   <elementGuidId>ebea6668-956f-4c0f-82af-2921191a0d70</elementGuidId>
+   <elementGuidId>616d0f12-9e8b-4a1b-924c-088749a8bd11</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[text()='Quick_host']</value>
+         <value>//button[text()=&quot; New Host&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

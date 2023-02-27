@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>hostGroupsList</name>
+   <name>saveHostBtn</name>
    <tag></tag>
-   <elementGuidId>d05a9991-5096-4539-8eec-8d56efec17c4</elementGuidId>
+   <elementGuidId>ce6f4a42-b57f-4331-be47-f8aadb9e36b7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'HostGroupList_src']</value>
+         <value>//*[@id = 'save-btn']</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -19,9 +18,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>class</name>
       <type>Main</type>
-      <value>HostGroupList_src</value>
-      <webElementGuid>a98ffecf-9838-4a9c-bb0a-842dbe52971d</webElementGuid>
+      <value>save-btn</value>
+      <webElementGuid>02eb10ad-f22d-48a2-a3d0-7492e35a146b</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

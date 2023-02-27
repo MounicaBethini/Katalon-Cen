@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>hostName</name>
+   <name>hostGroupsList</name>
    <tag></tag>
-   <elementGuidId>3386afdb-ed92-44a8-8972-eb829219c26e</elementGuidId>
+   <elementGuidId>d05a9991-5096-4539-8eec-8d56efec17c4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@name = 'host_name']</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[@id = 'HostGroupList_src']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -19,9 +18,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>name</name>
+      <name>id</name>
       <type>Main</type>
-      <value>host_name</value>
-      <webElementGuid>9d605205-08de-4e5c-9c2c-33ccd24b605d</webElementGuid>
+      <value>HostGroupList_src</value>
+      <webElementGuid>a98ffecf-9838-4a9c-bb0a-842dbe52971d</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

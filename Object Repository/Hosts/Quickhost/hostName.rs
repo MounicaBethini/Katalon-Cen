@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>saveQuickHost</name>
+   <name>hostName</name>
    <tag></tag>
-   <elementGuidId>ce6f4a42-b57f-4331-be47-f8aadb9e36b7</elementGuidId>
+   <elementGuidId>3386afdb-ed92-44a8-8972-eb829219c26e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'save-btn']</value>
+         <value>//*[@name = 'host_name']</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -19,9 +18,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>name</name>
       <type>Main</type>
-      <value>save-btn</value>
-      <webElementGuid>02eb10ad-f22d-48a2-a3d0-7492e35a146b</webElementGuid>
+      <value>host_name</value>
+      <webElementGuid>9d605205-08de-4e5c-9c2c-33ccd24b605d</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>hostprofiledropdown</name>
+   <name>newQuickhostbutton</name>
    <tag></tag>
-   <elementGuidId>e9c77467-6d92-4bb9-a0d3-c84e587a75d2</elementGuidId>
+   <elementGuidId>1b4611fa-2af2-4554-8d25-4f4980f083de</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[@id='select2-host_profile-container']</value>
+         <value>//button[text()=' Quick Host']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

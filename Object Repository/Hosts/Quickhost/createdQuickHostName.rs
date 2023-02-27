@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>selectMetricCollector</name>
+   <name>createdQuickHostName</name>
    <tag></tag>
-   <elementGuidId>3d326142-9cb4-4e54-94c6-5f0fd15e06d4</elementGuidId>
+   <elementGuidId>ebea6668-956f-4c0f-82af-2921191a0d70</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//a[@class='  monitor_id_select']</value>
+         <value>//span[text()='Quick_host']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
