@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Policy_success</name>
+   <name>policySuccessVerificationText</name>
    <tag></tag>
-   <elementGuidId>541428d0-916f-4e79-87a7-7e2e697f0cfc</elementGuidId>
+   <elementGuidId>68a947ac-0e10-461a-b56c-7de572fbcb66</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[@class='fa fa-plus-circle']</value>
+         <value>//div[@class='alert alert-info']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

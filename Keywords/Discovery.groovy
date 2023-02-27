@@ -29,20 +29,20 @@ public class Discovery {
 	def selectCollectorMethod() {
 		WebUI.click(findTestObject('Object Repository/DiscoveryPage/fixedCollectorButton'));
 	}
-	
-	
+
+
 	def selectCollector() {
 		WebUI.click(findTestObject('Object Repository/DiscoveryPage/selectCollector'));
-		
+
 		//Change to dynamic value
 	}
-	
+
 	@Keyword
 	def enterCollectorIP() {
 		WebUI.click(findTestObject('Object Repository/DiscoveryPage/selectSingleIP'))
 		WebUI.sendKeys(findTestObject('Object Repository/DiscoveryPage/ipAddress'), "10.0.35.79");
 	}
-		
+
 	@Keyword
 	def clickOnScanButton() {
 		WebUI.click(findTestObject('Object Repository/DiscoveryPage/startScan'));

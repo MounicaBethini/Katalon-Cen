@@ -44,14 +44,22 @@ public class Collectors {
 
 			WebUI.click(findTestObject('Object Repository/CollectorPage/Run_poilicy_button'))
 
-			def POlicy_sucess_bool = WebUI.waitForElementVisible(findTestObject('Object Repository/CollectorPage/Policy_success'), 7)
+			WebUI.waitForElementVisible(findTestObject('Object Repository/CollectorPage/policySuccessVerificationText'), 10, FailureHandling.STOP_ON_FAILURE)
 
-			if(POlicy_sucess_bool.equals(true))
+			def Policy_color = WebUI.getAttribute(findTestObject('Object Repository/CollectorPage/policySuccessVerificationIcon'), 'style')
+			println(Policy_color)
+
+			if(Policy_color.equals('color: green;'))
 			{
-				System.out.println("Policy Run completed sucessfully")
-				//def String = WebUI.getCSSValue(null, null)
 
-				//System.out.println(WebUI.waitForElementVisible(findTestObject('Object Repository/CollectorPage/Policy_success'), 7))
+				println("Policy Run completed sucessfully")
+
+			}
+
+			else {
+
+				println("Policy failed...")
+				println("Please check policy debug log!")
 			}
 
 		}
