@@ -1,0 +1,15 @@
+{
+  "keywordFileContentHash": "159EABCED145AAFE7F8C57DA82658C5A",
+  "keywordClasses": [
+    {
+      "name": "MapDesigner",
+      "keywordMethods": [
+        {
+          "name": "clickOnAddMapButton",
+          "parameters": []
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

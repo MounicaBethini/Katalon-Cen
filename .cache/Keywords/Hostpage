@@ -1,82 +1,48 @@
 {
-  "keywordFileContentHash": "679AA18A7541E80EEB99ED98AB7FD379",
+  "keywordFileContentHash": "A3B9298C684281E8A732862F8F615815",
   "keywordClasses": [
     {
       "name": "Hostpage",
       "keywordMethods": [
         {
           "name": "clickonNewQuickHostButton",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "clickOnNewHostButton",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "createNewHost",
-          "parameters": [
-            {
-              "name": "collector",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.lang.Object",
-                "unresolvedClassName": "java.lang.Object",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": true,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            }
-          ]
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "createQuickHost",
-          "parameters": [
-            {
-              "name": "collector",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.lang.Object",
-                "unresolvedClassName": "java.lang.Object",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": true,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            }
-          ]
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "enterHostName",
-          "parameters": [
-            {
-              "name": "hostName",
-              "initialExpression": "",
-              "type": {
-                "fullClassName": "java.lang.Object",
-                "unresolvedClassName": "java.lang.Object",
-                "isArray": false,
-                "isGnericsPlaceHolder": false,
-                "hasImmutableClassName": true,
-                "genericsTypes": [],
-                "errorOnParsing": false
-              }
-            }
-          ]
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "enterHostDesc",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "enterIpAdd",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "selectHostprofile",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "enterMetricCollector",
@@ -94,19 +60,23 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "enterHostCollector",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "enterHostGroupList",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "saveHost",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "selectCheckBox",
@@ -124,7 +94,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "selectContextMenu",
@@ -142,7 +113,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "selectHostOptions",
@@ -160,7 +132,8 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "selectHostProfiles",
@@ -178,15 +151,18 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "addProfilesAddButton",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "verifyProfleAdded",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "verifyHostCreated",
@@ -204,10 +180,11 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

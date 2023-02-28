@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "1F976934A95E04FAB4BE9E51E1B7AD7F",
+  "keywordFileContentHash": "6E3CE0E508D28AC0FEE714E41244381B",
   "keywordClasses": [
     {
       "name": "Navigations",
@@ -31,6 +31,16 @@
         },
         {
           "name": "switchToFrame",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "naviateToMapsMainPage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "navigateToMapDesignerPage",
           "parameters": [],
           "javadoc": ""
         }

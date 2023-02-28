@@ -32,48 +32,48 @@ public class Hostpage {
 	}
 
 	@Keyword
-	def createNewHost(def collector) {
+	def createNewHost() {
 		clickOnNewHostButton()
-		enterHostName("ManualHost")
+		enterHostName()
 		enterHostDesc()
 		enterIpAdd()
-		enterMetricCollector(collector)
+		enterMetricCollector(findTestData('Data Files/Hostpage').getValue('MetricCollector', 1))
 		enterHostCollector()
 		enterHostGroupList()
 		saveHost()
-		verifyHostCreated("ManualHost")
-		selectContextMenu("ManualHost")
-		selectHostOptions("Add Profile")
-		selectHostProfiles("Linux Server")
+		verifyHostCreated(findTestData('Data Files/Hostpage').getValue('HostName', 1))
+		selectContextMenu(findTestData('Data Files/Hostpage').getValue('HostName', 1))
+		selectHostOptions(findTestData('Data Files/Hostpage').getValue('HostOptions', 1))
+		selectHostProfiles(findTestData('Data Files/Hostpage').getValue('HostProfile', 1))
 		addProfilesAddButton()
 		verifyProfleAdded()
 	}
-	
+
 	@Keyword
-	def createQuickHost(def collector) {
+	def createQuickHost() {
 		clickonNewQuickHostButton()
-		enterHostName("QuickHost")
+		enterHostName()
 		enterHostDesc()
 		enterIpAdd()
 		selectHostprofile()
-		enterMetricCollector(collector)
+		enterMetricCollector(findTestData('Data Files/Hostpage').getValue('MetricCollector', 1))
 		enterHostCollector()
 		enterHostGroupList()
 	}
 
 	@Keyword
-	def enterHostName(def hostName) {
-		WebUI.sendKeys(findTestObject('Object Repository/Hosts/Quickhost/hostName'), hostName)
+	def enterHostName() {
+		WebUI.sendKeys(findTestObject('Object Repository/Hosts/Quickhost/hostName'), findTestData('Data Files/Hostpage').getValue('HostName', 1))
 	}
 
 	@Keyword
 	def enterHostDesc() {
-		WebUI.sendKeys(findTestObject('Object Repository/Hosts/Quickhost/hostAlias'), "Description")
+		WebUI.sendKeys(findTestObject('Object Repository/Hosts/Quickhost/hostAlias'), findTestData('Data Files/Hostpage').getValue('HostDescription', 1))
 	}
 
 	@Keyword
 	def enterIpAdd() {
-		WebUI.sendKeys(findTestObject('Object Repository/Hosts/Quickhost/ipAddress'), "10.0.35.67")
+		WebUI.sendKeys(findTestObject('Object Repository/Hosts/Quickhost/ipAddress'), findTestData('Data Files/Hostpage').getValue('HostIpAddress', 1))
 	}
 
 	@Keyword
@@ -96,7 +96,7 @@ public class Hostpage {
 
 	@Keyword
 	def enterHostGroupList() {
-		WebUI.selectOptionByLabel(findTestObject('Object Repository/Hosts/Quickhost/hostGroupsList'), 'Linux-Servers', false)
+		WebUI.selectOptionByLabel(findTestObject('Object Repository/Hosts/Quickhost/hostGroupsList'), findTestData('Data Files/Hostpage').getValue('HostGroup', 1), false)
 		WebUI.click(findTestObject('Object Repository/Hosts/Quickhost/forwardsinglehostgroup'))
 	}
 
@@ -105,34 +105,34 @@ public class Hostpage {
 
 		WebUI.click(findTestObject('Object Repository/Hosts/saveHostBtn'))
 	}
-	
+
 	@Keyword
 	def selectCheckBox(def hostName) {
 		WebUI.click(findTestObject('Object Repository/Hosts/checkBox',['host':hostName]))
 	}
-	
+
 	@Keyword
 	def selectContextMenu(def hostName) {
 		WebUI.scrollToElement(findTestObject('Object Repository/Hosts/contextMenu',['host':hostName]), 5)
 		WebUI.click(findTestObject('Object Repository/Hosts/contextMenu',['host':hostName]))
-		}
-		
+	}
+
 	@Keyword
 	def selectHostOptions(def hostOptions) {
 		WebUI.click(findTestObject('Object Repository/Hosts/hostOptions',['hostOptions':hostOptions]))
 	}
-	
+
 	@Keyword
 	def selectHostProfiles(def profile) {
 		WebUI.click(findTestObject('Object Repository/Hosts/addProfile_HostProfile'))
 		WebUI.click(findTestObject('Object Repository/Hosts/addProfile_selectProfile',['profile':profile]))
 	}
-	
+
 	@Keyword
 	def addProfilesAddButton() {
 		WebUI.click(findTestObject('Object Repository/Hosts/addProfile_AddButton'))
 	}
-	
+
 	@Keyword
 	def verifyProfleAdded() {
 		String actualMessage = "All Done"
@@ -140,8 +140,7 @@ public class Hostpage {
 		if(message==actualMessage) {
 			println("Host Profile added succesfully")
 		}
-		else if (message!=actualMessage)
-		{ 
+		else if (message!=actualMessage) {
 			println(message)
 		}
 	}
