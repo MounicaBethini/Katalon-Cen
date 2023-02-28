@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "D742F7A46864ADD7E95E91648A588C66",
+  "keywordFileContentHash": "6F9BD762AA38BEAA800D5811D84EBEF2",
   "keywordClasses": [
     {
       "name": "Hostpage",
@@ -20,6 +20,11 @@
           "javadoc": ""
         },
         {
+          "name": "createQuickHost",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
           "name": "enterHostName",
           "parameters": [],
           "javadoc": ""
@@ -35,6 +40,11 @@
           "javadoc": ""
         },
         {
+          "name": "selectHostprofile",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
           "name": "enterMetricCollector",
           "parameters": [],
           "javadoc": ""
@@ -45,14 +55,9 @@
           "javadoc": ""
         },
         {
-          "name": "enterDatatoQuickHost",
-          "parameters": [],
-          "javadoc": ""
-        },
-        {
           "name": "saveQuickHost",
           "parameters": [],
-          "javadoc": ""
+          "javadoc": "/**\t@Keyword\r\n\tdef enterDatatoQuickHost() {\r\n\r\n\t//\tWebUI.sendKeys(findTestObject(\u0027Object Repository/Hosts/Quickhost/hostName\u0027), \u0027Quick_host\u0027)\r\n\t\t\r\n\t\tWebUI.sendKeys(findTestObject(\u0027Object Repository/Hosts/Quickhost/hostAlias\u0027), \u0027Desc\u0027)\r\n\t\tWebUI.sendKeys(findTestObject(\u0027Object Repository/Hosts/Quickhost/ipAddress\u0027), \u002710.0.35.78\u0027)\r\n\t\tWebUI.click(findTestObject(\u0027Object Repository/Hosts/Quickhost/hostprofiledropdown\u0027))\r\n\t\tWebUI.click(findTestObject(\u0027Object Repository/Hosts/Quickhost/hostprofile\u0027))\r\n\t\tWebUI.click(findTestObject(\u0027Object Repository/Hosts/Quickhost/metricCollectordropdown\u0027))\r\n\t\tWebUI.click(findTestObject(\u0027Object Repository/Hosts/Quickhost/selectMetricCollector\u0027))\r\n\t\t//WebUI.selectAllOption(findTestObject(\u0027Object Repository/Hosts/Quickhost/hostGroupsList\u0027), FailureHandling.STOP_ON_FAILURE)\r\n\t\tWebUI.selectOptionByLabel(findTestObject(\u0027Object Repository/Hosts/Quickhost/hostGroupsList\u0027), \u0027Linux-Servers\u0027, false)\r\n\t\tWebUI.click(findTestObject(\u0027Object Repository/Hosts/Quickhost/forwardsinglehostgroup\u0027))\r\n\r\n\t}**/"
         },
         {
           "name": "verifyHostCreated",
