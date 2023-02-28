@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>selectMetricCollector</name>
+   <name>hostOptions</name>
    <tag></tag>
-   <elementGuidId>3d326142-9cb4-4e54-94c6-5f0fd15e06d4</elementGuidId>
+   <elementGuidId>18abf179-1925-460e-99a2-2008d7849998</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[@class=&quot;  monitor_id_select&quot;][text()=&quot;${collector}&quot;]</value>
+         <value>//nav[@class=&quot;react-contextmenu react-contextmenu--visible&quot;]//div[text()=&quot;${hostOptions}&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

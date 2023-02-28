@@ -1,18 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>selectMetricCollector</name>
+   <name>hostCollectorDropDown</name>
    <tag></tag>
-   <elementGuidId>3d326142-9cb4-4e54-94c6-5f0fd15e06d4</elementGuidId>
+   <elementGuidId>651075bb-874c-49b1-9954-71443fdf78f0</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[@class=&quot;  monitor_id_select&quot;][text()=&quot;${collector}&quot;]</value>
+         <value></value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>[id=&quot;host_collector_id_text&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>CSS</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

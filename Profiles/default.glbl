@@ -6,17 +6,22 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://demo.centerity78/#cgi-bin/dashboard.cgi?action=nologo'</initValue>
+      <initValue>'https://demo.centerity57/#cgi-bin/dashboard.cgi?action=nologo'</initValue>
       <name>url</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'edge'</initValue>
+      <initValue>'admin'</initValue>
       <name>userName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'1'</initValue>
+      <initValue>'2'</initValue>
       <name>password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'WIN-AQ7BLCA99G8'</initValue>
+      <name>metricCollector</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

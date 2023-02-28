@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>selectMetricCollector</name>
+   <name>contextMenu</name>
    <tag></tag>
-   <elementGuidId>3d326142-9cb4-4e54-94c6-5f0fd15e06d4</elementGuidId>
+   <elementGuidId>3f5bd997-5609-43f0-9968-d837190e0006</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[@class=&quot;  monitor_id_select&quot;][text()=&quot;${collector}&quot;]</value>
+         <value>//span[text()=&quot;${host}&quot;]/parent::a/parent::span/parent::div//following-sibling::div//div[@class=&quot;context-menu&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,4 +1,5 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -17,11 +18,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+
 CustomKeywords.'Login_page.loginTOTheApplication'()
 CustomKeywords.'Navigations.navigate_TO_AdminTab'()
 CustomKeywords.'Navigations.navigateToManagamenet'()
 CustomKeywords.'Navigations.naviateToHostPage'()
 CustomKeywords.'Navigations.switchToFrame'()
-CustomKeywords.'Hostpage.createQuickHost'()
-CustomKeywords.'Hostpage.saveQuickHost'()
+CustomKeywords.'Hostpage.createQuickHost'(GlobalVariable.metricCollector)
+CustomKeywords.'Hostpage.saveHost'()
 CustomKeywords.'Hostpage.verifyHostCreated'()

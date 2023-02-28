@@ -1,71 +1,173 @@
 {
-  "keywordFileContentHash": "6F9BD762AA38BEAA800D5811D84EBEF2",
+  "keywordFileContentHash": "4DACCCE206FADA306DEE1D127C37379D",
   "keywordClasses": [
     {
       "name": "Hostpage",
       "keywordMethods": [
         {
           "name": "clickonNewQuickHostButton",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "clickOnNewHostButton",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "createNewHost",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": [
+            {
+              "name": "collector",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
         },
         {
           "name": "createQuickHost",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": [
+            {
+              "name": "collector",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
         },
         {
           "name": "enterHostName",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": [
+            {
+              "name": "hostName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
         },
         {
           "name": "enterHostDesc",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "enterIpAdd",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "selectHostprofile",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "enterMetricCollector",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": [
+            {
+              "name": "collector",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        },
+        {
+          "name": "enterHostCollector",
+          "parameters": []
         },
         {
           "name": "enterHostGroupList",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
-          "name": "saveQuickHost",
-          "parameters": [],
-          "javadoc": "/**\t@Keyword\r\n\tdef enterDatatoQuickHost() {\r\n\r\n\t//\tWebUI.sendKeys(findTestObject(\u0027Object Repository/Hosts/Quickhost/hostName\u0027), \u0027Quick_host\u0027)\r\n\t\t\r\n\t\tWebUI.sendKeys(findTestObject(\u0027Object Repository/Hosts/Quickhost/hostAlias\u0027), \u0027Desc\u0027)\r\n\t\tWebUI.sendKeys(findTestObject(\u0027Object Repository/Hosts/Quickhost/ipAddress\u0027), \u002710.0.35.78\u0027)\r\n\t\tWebUI.click(findTestObject(\u0027Object Repository/Hosts/Quickhost/hostprofiledropdown\u0027))\r\n\t\tWebUI.click(findTestObject(\u0027Object Repository/Hosts/Quickhost/hostprofile\u0027))\r\n\t\tWebUI.click(findTestObject(\u0027Object Repository/Hosts/Quickhost/metricCollectordropdown\u0027))\r\n\t\tWebUI.click(findTestObject(\u0027Object Repository/Hosts/Quickhost/selectMetricCollector\u0027))\r\n\t\t//WebUI.selectAllOption(findTestObject(\u0027Object Repository/Hosts/Quickhost/hostGroupsList\u0027), FailureHandling.STOP_ON_FAILURE)\r\n\t\tWebUI.selectOptionByLabel(findTestObject(\u0027Object Repository/Hosts/Quickhost/hostGroupsList\u0027), \u0027Linux-Servers\u0027, false)\r\n\t\tWebUI.click(findTestObject(\u0027Object Repository/Hosts/Quickhost/forwardsinglehostgroup\u0027))\r\n\r\n\t}**/"
+          "name": "saveHost",
+          "parameters": []
+        },
+        {
+          "name": "selectCheckBox",
+          "parameters": [
+            {
+              "name": "hostName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        },
+        {
+          "name": "selectContextMenu",
+          "parameters": [
+            {
+              "name": "hostName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        },
+        {
+          "name": "selectHostOptions",
+          "parameters": [
+            {
+              "name": "hostOptions",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
         },
         {
           "name": "verifyHostCreated",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

@@ -32,51 +32,64 @@ public class Hostpage {
 	}
 
 	@Keyword
-	def createNewHost() {
+	def createNewHost(def collector) {
 		clickOnNewHostButton()
-		enterHostName()
+		enterHostName("ManuaHost")
 		enterHostDesc()
 		enterIpAdd()
-		enterMetricCollector()
+		enterMetricCollector(collector)
+		enterHostCollector()
+		enterHostGroupList()
+		saveHost()
+		//selectCheckBox("ManuaHost")
+		selectContextMenu("ManuaHost")
+		selectHostOptions("Add Profile")
 	}
+	
 	@Keyword
-	def createQuickHost() {
-		
+	def createQuickHost(def collector) {
+
 		clickonNewQuickHostButton()
-		enterHostName()
+		enterHostName("QuickHost")
 		enterHostDesc()
 		enterIpAdd()
 		selectHostprofile()
-		enterMetricCollector()
+		enterMetricCollector(collector)
+		enterHostCollector()
 		enterHostGroupList()
 	}
 
 	@Keyword
-	def enterHostName() {
-		WebUI.sendKeys(findTestObject('Object Repository/Hosts/Quickhost/hostName'), findTestData('Data Files/QuickHost').getValue('HostName', 1))
+	def enterHostName(def hostName) {
+		WebUI.sendKeys(findTestObject('Object Repository/Hosts/Quickhost/hostName'), hostName)
 	}
 
 	@Keyword
 	def enterHostDesc() {
-		WebUI.sendKeys(findTestObject('Object Repository/Hosts/Quickhost/hostAlias'),  findTestData('Data Files/QuickHost').getValue('Description', 1))
+		WebUI.sendKeys(findTestObject('Object Repository/Hosts/Quickhost/hostAlias'), "Description")
 	}
 
 	@Keyword
 	def enterIpAdd() {
-		WebUI.sendKeys(findTestObject('Object Repository/Hosts/Quickhost/ipAddress'),  findTestData('Data Files/QuickHost').getValue('IpAddress', 1))
+		WebUI.sendKeys(findTestObject('Object Repository/Hosts/Quickhost/ipAddress'), "10.0.35.67")
 	}
-	
+
 	@Keyword
 	def selectHostprofile() {
-		
 		WebUI.click(findTestObject('Object Repository/Hosts/Quickhost/hostprofiledropdown'))
 		WebUI.click(findTestObject('Object Repository/Hosts/Quickhost/hostprofile'))
 	}
 
 	@Keyword
-	def enterMetricCollector() {
+	def enterMetricCollector(def collector) {
 		WebUI.click(findTestObject('Object Repository/Hosts/Quickhost/metricCollectordropdown'))
-		WebUI.click(findTestObject('Object Repository/Hosts/Quickhost/selectMetricCollector'))
+		WebUI.click(findTestObject('Object Repository/Hosts/Quickhost/selectMetricCollector',['collector':collector]))
+	}
+
+	@Keyword
+	def enterHostCollector() {
+		WebUI.click(findTestObject('Object Repository/Hosts/hostCollectorDropDown'))
+		WebUI.click(findTestObject('Object Repository/Hosts/selectHostCollector'))
 	}
 
 	@Keyword
@@ -85,27 +98,26 @@ public class Hostpage {
 		WebUI.click(findTestObject('Object Repository/Hosts/Quickhost/forwardsinglehostgroup'))
 	}
 
-/**	@Keyword
-	def enterDatatoQuickHost() {
-
-	//	WebUI.sendKeys(findTestObject('Object Repository/Hosts/Quickhost/hostName'), 'Quick_host')
-		
-		WebUI.sendKeys(findTestObject('Object Repository/Hosts/Quickhost/hostAlias'), 'Desc')
-		WebUI.sendKeys(findTestObject('Object Repository/Hosts/Quickhost/ipAddress'), '10.0.35.78')
-		WebUI.click(findTestObject('Object Repository/Hosts/Quickhost/hostprofiledropdown'))
-		WebUI.click(findTestObject('Object Repository/Hosts/Quickhost/hostprofile'))
-		WebUI.click(findTestObject('Object Repository/Hosts/Quickhost/metricCollectordropdown'))
-		WebUI.click(findTestObject('Object Repository/Hosts/Quickhost/selectMetricCollector'))
-		//WebUI.selectAllOption(findTestObject('Object Repository/Hosts/Quickhost/hostGroupsList'), FailureHandling.STOP_ON_FAILURE)
-		WebUI.selectOptionByLabel(findTestObject('Object Repository/Hosts/Quickhost/hostGroupsList'), 'Linux-Servers', false)
-		WebUI.click(findTestObject('Object Repository/Hosts/Quickhost/forwardsinglehostgroup'))
-
-	}**/
 	@Keyword
-	def saveQuickHost() {
+	def saveHost() {
 
 		WebUI.click(findTestObject('Object Repository/Hosts/saveHostBtn'))
 	}
+	
+	@Keyword
+	def selectCheckBox(def hostName) {
+		WebUI.click(findTestObject('Object Repository/Hosts/checkBox',['host':hostName]))
+	}
+	
+	@Keyword
+	def selectContextMenu(def hostName) {
+		WebUI.click(findTestObject('Object Repository/Hosts/contextMenu',['host':hostName]))
+	}
+	@Keyword
+	def selectHostOptions(def hostOptions) {
+		WebUI.click(findTestObject('Object Repository/Hosts/hostOptions',['hostOptions':hostOptions]))
+	}
+	
 	@Keyword
 	def verifyHostCreated() {
 
@@ -117,6 +129,6 @@ public class Hostpage {
 		else {
 
 			println('Quick host is not created')
-	     }
+		}
 	}
 }
