@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "4DACCCE206FADA306DEE1D127C37379D",
+  "keywordFileContentHash": "679AA18A7541E80EEB99ED98AB7FD379",
   "keywordClasses": [
     {
       "name": "Hostpage",
@@ -163,8 +163,48 @@
           ]
         },
         {
-          "name": "verifyHostCreated",
+          "name": "selectHostProfiles",
+          "parameters": [
+            {
+              "name": "profile",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        },
+        {
+          "name": "addProfilesAddButton",
           "parameters": []
+        },
+        {
+          "name": "verifyProfleAdded",
+          "parameters": []
+        },
+        {
+          "name": "verifyHostCreated",
+          "parameters": [
+            {
+              "name": "hostName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
         }
       ]
     }

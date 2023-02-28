@@ -6,6 +6,10 @@
    <elementGuidId>a7fffde1-3c8a-4d39-9872-f4409be03e68</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>BASIC</key>
          <value>//*[@class = 'body']</value>
       </entry>
@@ -18,6 +22,6 @@
       <name>class</name>
       <type>Main</type>
       <value>body</value>
-      <webElementGuid>83e42849-bcd9-4cec-888f-ae213835753d</webElementGuid>
+      <webElementGuid>64791740-08d2-4fe1-a1d8-3a1c29af32ae</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

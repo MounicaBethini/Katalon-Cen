@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>createdQuickHostName</name>
+   <name>addProfile_selectProfile</name>
    <tag></tag>
-   <elementGuidId>ebea6668-956f-4c0f-82af-2921191a0d70</elementGuidId>
+   <elementGuidId>d46e4865-3b02-4f98-9246-8586203237be</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[text()='${hostName}']</value>
+         <value>//div[text()=&quot;${profile}&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

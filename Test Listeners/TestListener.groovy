@@ -39,7 +39,7 @@ class TestListener {
 	 * Executes after every test case ends.
 	 * @param testCaseContext related information of the executed test case.
 	 */
-	@AfterTestCase
+	//@AfterTestCase
 	def closeBrowser() {
 		WebUI.closeBrowser();
 	}

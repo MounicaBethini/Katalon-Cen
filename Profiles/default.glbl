@@ -21,7 +21,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'WIN-AQ7BLCA99G8'</initValue>
+      <initValue>'10-0-35-67'</initValue>
       <name>metricCollector</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

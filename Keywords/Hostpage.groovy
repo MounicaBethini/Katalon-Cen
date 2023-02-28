@@ -34,21 +34,23 @@ public class Hostpage {
 	@Keyword
 	def createNewHost(def collector) {
 		clickOnNewHostButton()
-		enterHostName("ManuaHost")
+		enterHostName("ManualHost")
 		enterHostDesc()
 		enterIpAdd()
 		enterMetricCollector(collector)
 		enterHostCollector()
 		enterHostGroupList()
 		saveHost()
-		//selectCheckBox("ManuaHost")
-		selectContextMenu("ManuaHost")
+		verifyHostCreated("ManualHost")
+		selectContextMenu("ManualHost")
 		selectHostOptions("Add Profile")
+		selectHostProfiles("Linux Server")
+		addProfilesAddButton()
+		verifyProfleAdded()
 	}
 	
 	@Keyword
 	def createQuickHost(def collector) {
-
 		clickonNewQuickHostButton()
 		enterHostName("QuickHost")
 		enterHostDesc()
@@ -111,17 +113,42 @@ public class Hostpage {
 	
 	@Keyword
 	def selectContextMenu(def hostName) {
+		WebUI.scrollToElement(findTestObject('Object Repository/Hosts/contextMenu',['host':hostName]), 5)
 		WebUI.click(findTestObject('Object Repository/Hosts/contextMenu',['host':hostName]))
-	}
+		}
+		
 	@Keyword
 	def selectHostOptions(def hostOptions) {
 		WebUI.click(findTestObject('Object Repository/Hosts/hostOptions',['hostOptions':hostOptions]))
 	}
 	
 	@Keyword
-	def verifyHostCreated() {
+	def selectHostProfiles(def profile) {
+		WebUI.click(findTestObject('Object Repository/Hosts/addProfile_HostProfile'))
+		WebUI.click(findTestObject('Object Repository/Hosts/addProfile_selectProfile',['profile':profile]))
+	}
+	
+	@Keyword
+	def addProfilesAddButton() {
+		WebUI.click(findTestObject('Object Repository/Hosts/addProfile_AddButton'))
+	}
+	
+	@Keyword
+	def verifyProfleAdded() {
+		String actualMessage = "All Done"
+		String message=WebUI.getText(findTestObject('Object Repository/Hosts/addProfile_Alert'))
+		if(message==actualMessage) {
+			println("Host Profile added succesfully")
+		}
+		else if (message!=actualMessage)
+		{ 
+			println(message)
+		}
+	}
+	@Keyword
+	def verifyHostCreated(def hostName) {
 
-		if(WebUI.verifyElementPresent(findTestObject('Object Repository/Hosts/Quickhost/createdQuickHostName'), 5).equals(true)) {
+		if(WebUI.verifyElementPresent(findTestObject('Object Repository/Hosts/Quickhost/createdQuickHostName',['hostName':hostName]), 5).equals(true)) {
 
 			println('A new Quick host created')
 		}

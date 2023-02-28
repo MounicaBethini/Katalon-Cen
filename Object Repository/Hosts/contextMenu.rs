@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[text()=&quot;${host}&quot;]/parent::a/parent::span/parent::div//following-sibling::div//div[@class=&quot;context-menu&quot;]</value>
+         <value>//span[text()=&quot;${host}&quot;]/parent::a/parent::span/parent::div//following-sibling::div//div[@class=&quot;context-menu&quot;]//span</value>
       </entry>
       <entry>
          <key>BASIC</key>

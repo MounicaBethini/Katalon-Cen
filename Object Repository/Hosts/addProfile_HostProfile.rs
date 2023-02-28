@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>createdQuickHostName</name>
+   <name>addProfile_HostProfile</name>
    <tag></tag>
-   <elementGuidId>ebea6668-956f-4c0f-82af-2921191a0d70</elementGuidId>
+   <elementGuidId>f0e0e713-cb7b-4a3b-9357-cf453984eb13</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[text()='${hostName}']</value>
+         <value>//div[text()=&quot;Monitor&quot;]/parent::div//span[@class=&quot;Select-arrow-zone&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
