@@ -38,6 +38,8 @@ import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import java.awt.Robot
+import java.awt.event.KeyEvent
 class Login_page {
 
 	@Keyword
@@ -46,5 +48,11 @@ class Login_page {
 		WebUI.sendKeys(findTestObject('Object Repository/Login_page/password_textbox'), GlobalVariable.password)
 		WebUI.click(findTestObject('Object Repository/Login_page/login_B'))
 		WebUI.waitForPageLoad(5)
+		//WebUI.executeJavaScript("document.body.style.zoom='80%'", null)
+		Robot robot = new Robot()
+		robot.keyPress(KeyEvent.VK_CONTROL)
+		 robot.keyPress(KeyEvent.VK_MINUS) 
+		 robot.keyRelease(KeyEvent.VK_CONTROL)
+		  robot.keyRelease(KeyEvent.VK_MINUS)
 	}
 }

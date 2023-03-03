@@ -1,15 +1,109 @@
 {
-  "keywordFileContentHash": "159EABCED145AAFE7F8C57DA82658C5A",
+  "keywordFileContentHash": "BDCB995F0085230DB62E795A3A92E2E9",
   "keywordClasses": [
     {
       "name": "MapDesigner",
       "keywordMethods": [
         {
+          "name": "createMap",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
           "name": "clickOnAddMapButton",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "switchWindow",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "saveMapName",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "clickOnHostIcon",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "clickOnHostroupIcon",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "clickOnLinkIcon",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "linkHostAndHostGroup",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "assignHosttoElement",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "assignHostGroupToElement",
+          "parameters": [
+            {
+              "name": "host_group",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "saveTheMap",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "verifyMapSaved",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "closeAndMoveToOriginalWindow",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "verifyMapCreated",
+          "parameters": [
+            {
+              "name": "mapname",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

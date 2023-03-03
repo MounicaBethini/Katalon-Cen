@@ -15,6 +15,9 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import org.openqa.selenium.JavascriptExecutor
+import org.openqa.selenium.WebDriver
+import com.kms.katalon.core.webui.driver.DriverFactory
 
 import internal.GlobalVariable
 
@@ -46,21 +49,20 @@ public class Navigations {
 
 		WebUI.click(findTestObject('Object Repository/PageNavigation/hostpage'))
 	}
-	
+
 	@Keyword
 	def switchToFrame() {
+		
 		WebUI.switchToFrame(findTestObject('Object Repository/PageNavigation/SwitchFrame'), 2, FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@Keyword
 	def naviateToMapsMainPage() {
 		WebUI.click(findTestObject('Object Repository/PageNavigation/mapsMainpage'), FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@Keyword
 	def navigateToMapDesignerPage() {
 		WebUI.click(findTestObject('Object Repository/PageNavigation/mapDesigner'), FailureHandling.STOP_ON_FAILURE)
 	}
-	
-	
 }
