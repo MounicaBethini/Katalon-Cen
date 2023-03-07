@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "9077AB1F4E2B3CEAB2A44FB369E211AE",
+  "keywordFileContentHash": "DAC27FBD5C856250FE177AC640105070",
   "keywordClasses": [
     {
       "name": "Navigations",
@@ -26,6 +26,11 @@
         },
         {
           "name": "naviateToHostPage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "navigateToBSMPage",
           "parameters": [],
           "javadoc": ""
         },

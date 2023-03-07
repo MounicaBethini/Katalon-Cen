@@ -49,10 +49,16 @@ public class Navigations {
 
 		WebUI.click(findTestObject('Object Repository/PageNavigation/hostpage'))
 	}
+	
+	@Keyword
+	def navigateToBSMPage() {
+		
+		WebUI.click(findTestObject('Object Repository/PageNavigation/BussinesServicePage'))
+	}
 
 	@Keyword
 	def switchToFrame() {
-		
+
 		WebUI.switchToFrame(findTestObject('Object Repository/PageNavigation/SwitchFrame'), 2, FailureHandling.STOP_ON_FAILURE)
 	}
 
