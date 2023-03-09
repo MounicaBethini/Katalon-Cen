@@ -1,0 +1,31 @@
+{
+  "keywordFileContentHash": "D74450796C915B875C4103FCB6B712D4",
+  "keywordClasses": [
+    {
+      "name": "BussinessServicesPage",
+      "keywordMethods": [
+        {
+          "name": "clickOnNewBSMButton",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "enterBSMName",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "enterBSMDescription",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "clickOncontactGroupdropdown",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
