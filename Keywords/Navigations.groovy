@@ -71,9 +71,18 @@ public class Navigations {
 	def navigateToMapDesignerPage() {
 		WebUI.click(findTestObject('Object Repository/PageNavigation/mapDesigner'), FailureHandling.STOP_ON_FAILURE)
 	}
-	
+
 	@Keyword
 	def navigateToAdminAboutPage() {
 		WebUI.click(findTestObject('Object Repository/PageNavigation/AdminABoutPage'))
+	}
+
+	@Keyword
+	def navigateToSettingsPage() {
+		WebUI.click(findTestObject('Object Repository/PageNavigation/Settings/SettingsPage'))
+	}
+	@Keyword
+	def navigateToGeneralSettings(){
+		WebUI.click(findTestObject('Object Repository/PageNavigation/Settings/GeneralPage'))
 	}
 }

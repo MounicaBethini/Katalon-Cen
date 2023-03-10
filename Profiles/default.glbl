@@ -24,4 +24,9 @@
       <initValue>'10-0-35-67'</initValue>
       <name>metricCollector</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'5.1.1.0'</initValue>
+      <name>softwareVersion</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

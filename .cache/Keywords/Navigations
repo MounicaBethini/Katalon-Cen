@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "4FB3B168F5D7C29FE04093B9F6E8E071",
+  "keywordFileContentHash": "E46971906D64EEF4A1016C6891968D4F",
   "keywordClasses": [
     {
       "name": "Navigations",
@@ -42,6 +42,14 @@
         },
         {
           "name": "navigateToAdminAboutPage",
+          "parameters": []
+        },
+        {
+          "name": "navigateToSettingsPage",
+          "parameters": []
+        },
+        {
+          "name": "navigateToGeneralSettings",
           "parameters": []
         }
       ]
