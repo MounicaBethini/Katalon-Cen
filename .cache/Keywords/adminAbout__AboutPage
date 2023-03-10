@@ -1,0 +1,71 @@
+{
+  "keywordFileContentHash": "C0247C1F4FBD0D01AC1F135F897EB492",
+  "keywordClasses": [
+    {
+      "name": "adminAbout.AboutPage",
+      "keywordMethods": [
+        {
+          "name": "verifySoftwareVersion",
+          "parameters": [
+            {
+              "name": "softwareVersion",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        },
+        {
+          "name": "clickOnSummary",
+          "parameters": []
+        },
+        {
+          "name": "verifyHostName",
+          "parameters": []
+        },
+        {
+          "name": "verifyLicenseKey",
+          "parameters": []
+        },
+        {
+          "name": "verifyDealerKey",
+          "parameters": []
+        },
+        {
+          "name": "verifySQLRunnerKey",
+          "parameters": []
+        },
+        {
+          "name": "clickOnLicenseMenu",
+          "parameters": []
+        },
+        {
+          "name": "verifyVersionInLicenseMenu",
+          "parameters": [
+            {
+              "name": "softwareVersion",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

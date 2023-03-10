@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Validate software version information in Admin about page</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e3ff4faf-ab2c-4863-ada8-10c3f7e3230e</testCaseGuid>
+</TestCaseEntity>

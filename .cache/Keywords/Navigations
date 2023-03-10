@@ -1,56 +1,51 @@
 {
-  "keywordFileContentHash": "DAC27FBD5C856250FE177AC640105070",
+  "keywordFileContentHash": "4FB3B168F5D7C29FE04093B9F6E8E071",
   "keywordClasses": [
     {
       "name": "Navigations",
       "keywordMethods": [
         {
           "name": "navigate_TO_AdminTab",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "navigateToManagamenet",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "navigateToCollectorPage",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "navigateToDiscoveryPage",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "naviateToHostPage",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "navigateToBSMPage",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "switchToFrame",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "naviateToMapsMainPage",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "navigateToMapDesignerPage",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
+        },
+        {
+          "name": "navigateToAdminAboutPage",
+          "parameters": []
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

@@ -49,10 +49,10 @@ public class Navigations {
 
 		WebUI.click(findTestObject('Object Repository/PageNavigation/hostpage'))
 	}
-	
+
 	@Keyword
 	def navigateToBSMPage() {
-		
+
 		WebUI.click(findTestObject('Object Repository/PageNavigation/BussinesServicePage'))
 	}
 
@@ -70,5 +70,10 @@ public class Navigations {
 	@Keyword
 	def navigateToMapDesignerPage() {
 		WebUI.click(findTestObject('Object Repository/PageNavigation/mapDesigner'), FailureHandling.STOP_ON_FAILURE)
+	}
+	
+	@Keyword
+	def navigateToAdminAboutPage() {
+		WebUI.click(findTestObject('Object Repository/PageNavigation/AdminABoutPage'))
 	}
 }
