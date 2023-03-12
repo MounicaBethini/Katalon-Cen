@@ -20,31 +20,38 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         },
         {
           "name": "clickOnSummary",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "verifyHostName",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "verifyLicenseKey",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "verifyDealerKey",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "verifySQLRunnerKey",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "clickOnLicenseMenu",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "verifyVersionInLicenseMenu",
@@ -62,10 +69,11 @@
                 "errorOnParsing": false
               }
             }
-          ]
+          ],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

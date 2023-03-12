@@ -21,26 +21,69 @@ import internal.GlobalVariable
 public class BussinessServicesPage {
 	
 	@Keyword
+	def createBSM() {
+		
+		clickOnNewBSMButton()
+		WebUI.waitForPageLoad(10, FailureHandling.STOP_ON_FAILURE)
+		enterBSMName()
+		enterBSMDescription()
+		clickOncontactGroupdropdown()
+		navigateToNextPage()
+		addHostToBSM()
+		navigateToNextPage()
+		navigateToNextPage()
+		addThresholdValues()
+	}
+
+	@Keyword
 	def clickOnNewBSMButton() {
 		
+
 		WebUI.click(findTestObject('Object Repository/BussinessServicesPage/newBSMButton'))
 	}
-	
+
 	@Keyword
 	def enterBSMName() {
-		
-		WebUI.sendKeys((findTestObject('Object Repository/BussinessServicesPage/bsmName')), 'test')
+
+		WebUI.sendKeys((findTestObject('Object Repository/BussinessServicesPage/bsmName')), 'test2')
 	}
-	
+
 	@Keyword
 	def enterBSMDescription() {
-		
+
 		WebUI.sendKeys((findTestObject('Object Repository/BussinessServicesPage/bsmDescription')), 'test')
+	}
+
+	@Keyword
+	def clickOncontactGroupdropdown() {
+
+		WebUI.click(findTestObject('Object Repository/BussinessServicesPage/bsmContactGroupDropdown'))
+		WebUI.click(findTestObject('Object Repository/BussinessServicesPage/adminCG'))
+		
 	}
 	
 	@Keyword
-	def clickOncontactGroupdropdown() {
+	def navigateToNextPage() {
+		
+		WebUI.click(findTestObject('Object Repository/BussinessServicesPage/nextButton'))
+	}
 	
-		WebUI.click(findTestObject('Object Repository/BussinessServicesPage/bsmContactGroupDropdown'))
+	@Keyword
+	def addHostToBSM() {
+		
+		WebUI.click(findTestObject('Object Repository/BussinessServicesPage/AddHost'))
+	}
+	
+	@Keyword
+	def addThresholdValues() {
+		
+		WebUI.sendKeys(findTestObject('Object Repository/BussinessServicesPage/criticalValue'), '80')
+		WebUI.sendKeys(findTestObject('Object Repository/BussinessServicesPage/okstateValue'), '85')
+	}
+	
+	@Keyword
+	def clickOnFinishBtn() {
+		
+		WebUI.click(findTestObject('Object Repository/BussinessServicesPage/finishButton'))
 	}
 }

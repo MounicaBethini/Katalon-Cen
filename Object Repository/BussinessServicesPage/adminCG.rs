@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>newBSMButton</name>
+   <name>adminCG</name>
    <tag></tag>
-   <elementGuidId>8b133712-7631-406d-82ab-cdce8c6d35b5</elementGuidId>
+   <elementGuidId>ef7519f1-71a4-4248-b461-2470bb4fb4c7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[text()=' New BSM']</value>
+         <value>//*[text()='admin_users']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

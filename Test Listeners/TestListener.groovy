@@ -41,7 +41,7 @@ class TestListener {
 	 */
 	@AfterTestCase
 	def closeBrowser() {
-		WebUI.closeBrowser();
+		//WebUI.closeBrowser();
 	}
 
 	/**

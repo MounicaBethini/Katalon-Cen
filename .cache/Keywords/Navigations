@@ -1,59 +1,71 @@
 {
-  "keywordFileContentHash": "E46971906D64EEF4A1016C6891968D4F",
+  "keywordFileContentHash": "DBDF086A17713797AA4E0F53E6F6BD17",
   "keywordClasses": [
     {
       "name": "Navigations",
       "keywordMethods": [
         {
           "name": "navigate_TO_AdminTab",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "navigateToManagamenet",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "navigateToCollectorPage",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "navigateToDiscoveryPage",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "naviateToHostPage",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "navigateToBSMPage",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "switchToFrame",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "naviateToMapsMainPage",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "navigateToMapDesignerPage",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "navigateToAdminAboutPage",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "navigateToSettingsPage",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         },
         {
           "name": "navigateToGeneralSettings",
-          "parameters": []
+          "parameters": [],
+          "javadoc": ""
         }
       ]
     }
   ],
-  "javadocParsed": false
+  "javadocParsed": true
 }

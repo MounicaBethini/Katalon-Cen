@@ -6,7 +6,7 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://demo.centerity78/#cgi-bin/dashboard.cgi?action=nologo'</initValue>
+      <initValue>'https://demo.centerity78/cgi-bin/login.cgi'</initValue>
       <name>url</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

@@ -1,9 +1,14 @@
 {
-  "keywordFileContentHash": "D74450796C915B875C4103FCB6B712D4",
+  "keywordFileContentHash": "AC41ABF3D87C961C3FD73B6FFE8BD1CE",
   "keywordClasses": [
     {
       "name": "BussinessServicesPage",
       "keywordMethods": [
+        {
+          "name": "createBSM",
+          "parameters": [],
+          "javadoc": ""
+        },
         {
           "name": "clickOnNewBSMButton",
           "parameters": [],
@@ -21,6 +26,26 @@
         },
         {
           "name": "clickOncontactGroupdropdown",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "navigateToNextPage",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "addHostToBSM",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "addThresholdValues",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "clickOnFinishBtn",
           "parameters": [],
           "javadoc": ""
         }
