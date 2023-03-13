@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[@title='Add']</value>
+         <value>//span[text()=&quot;${host}&quot;]//parent::div//following-sibling::div//child::div//child::span[@title='Add']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

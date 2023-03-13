@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>nextButton</name>
+   <name>OS</name>
    <tag></tag>
-   <elementGuidId>d89a2330-fd87-40eb-a4b8-7fb5b98e2a38</elementGuidId>
+   <elementGuidId>553ea050-bff2-4ee2-85f1-7e3956a035aa</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div//input[@value='Next']</value>
+         <value>//div[text()='Operating System']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

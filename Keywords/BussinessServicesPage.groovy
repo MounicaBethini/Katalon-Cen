@@ -4,6 +4,9 @@ import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.remote.server.handler.FindElement
+
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
@@ -16,74 +19,104 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
+
 import internal.GlobalVariable
 
 public class BussinessServicesPage {
-	
+
 	@Keyword
 	def createBSM() {
-		
+
 		clickOnNewBSMButton()
-		WebUI.waitForPageLoad(10, FailureHandling.STOP_ON_FAILURE)
-		enterBSMName()
+	//	WebUI.waitForPageLoad(10, FailureHandling.STOP_ON_FAILURE)
+	    enterBSMName()
 		enterBSMDescription()
-		clickOncontactGroupdropdown()
+		clickOncontactGroupdropdown(findTestData('Data Files/BSM').getValue('ContactGroup', 1))
 		navigateToNextPage()
-		addHostToBSM()
+		addHostToBSM(findTestData('Data Files/BSM').getValue('Hostname', 1))
 		navigateToNextPage()
+		WebUI.click(findTestObject('Object Repository/BussinessServicesPage/OS'))
 		navigateToNextPage()
+		//selectthresholdTab()
 		addThresholdValues()
+		clickOnFinishBtn()
+		verifyBSMcreated(findTestData('Data Files/BSM').getValue('Name', 1))
 	}
 
 	@Keyword
 	def clickOnNewBSMButton() {
-		
 
+		WebUI.waitForElementClickable(findTestObject('Object Repository/BussinessServicesPage/newBSMButton'), 5)
 		WebUI.click(findTestObject('Object Repository/BussinessServicesPage/newBSMButton'))
 	}
 
 	@Keyword
 	def enterBSMName() {
 
-		WebUI.sendKeys((findTestObject('Object Repository/BussinessServicesPage/bsmName')), 'test2')
+		WebUI.sendKeys((findTestObject('Object Repository/BussinessServicesPage/bsmName')), findTestData('Data Files/BSM').getValue('Name', 1))
 	}
 
 	@Keyword
 	def enterBSMDescription() {
 
-		WebUI.sendKeys((findTestObject('Object Repository/BussinessServicesPage/bsmDescription')), 'test')
+		WebUI.sendKeys((findTestObject('Object Repository/BussinessServicesPage/bsmDescription')), findTestData('Data Files/BSM').getValue('Description', 1))
 	}
 
 	@Keyword
-	def clickOncontactGroupdropdown() {
+	def clickOncontactGroupdropdown(def CG) {
 
 		WebUI.click(findTestObject('Object Repository/BussinessServicesPage/bsmContactGroupDropdown'))
-		WebUI.click(findTestObject('Object Repository/BussinessServicesPage/adminCG'))
-		
+		WebUI.click(findTestObject('Object Repository/BussinessServicesPage/adminCG', ['CG':CG]))
 	}
-	
+
 	@Keyword
 	def navigateToNextPage() {
 		
+		
 		WebUI.click(findTestObject('Object Repository/BussinessServicesPage/nextButton'))
 	}
-	
+
 	@Keyword
-	def addHostToBSM() {
-		
-		WebUI.click(findTestObject('Object Repository/BussinessServicesPage/AddHost'))
+	def addHostToBSM(def hostname) {
+
+		WebUI.click(findTestObject('Object Repository/BussinessServicesPage/AddHost', ['host':hostname]))
 	}
 	
+	@Keyword
+	def selectthresholdTab() {
+		
+		WebUI.click(findTestObject('Object Repository/BussinessServicesPage/OS'))
+		WebUI.click(findTestObject('Object Repository/BussinessServicesPage/thresholdTab'))
+	}
+
 	@Keyword
 	def addThresholdValues() {
-		
-		WebUI.sendKeys(findTestObject('Object Repository/BussinessServicesPage/criticalValue'), '80')
-		WebUI.sendKeys(findTestObject('Object Repository/BussinessServicesPage/okstateValue'), '85')
+
+		WebUI.sendKeys(findTestObject('Object Repository/BussinessServicesPage/criticalValue'), findTestData('Data Files/BSM').getValue('CriticalValue', 1))
+		WebUI.sendKeys(findTestObject('Object Repository/BussinessServicesPage/okstateValue'), findTestData('Data Files/BSM').getValue('OkValue', 1))
 	}
-	
+
 	@Keyword
 	def clickOnFinishBtn() {
+
 		
 		WebUI.click(findTestObject('Object Repository/BussinessServicesPage/finishButton'))
 	}
+	
+	@Keyword
+	def verifyBSMcreated(def BSMname) {
+		
+		WebUI.scrollToElement(findTestObject('Object Repository/BussinessServicesPage/createdBSMName', ['BSMname': BSMname]), 5)
+		 
+	   if(WebUI.verifyElementPresent(findTestObject('Object Repository/BussinessServicesPage/createdBSMName', ['BSMname': BSMname]), 5).equals(true)) {
+		   
+		   if(WebUI.verifyElementPresent(findTestObject('Object Repository/BussinessServicesPage/statuscoulmn',['BSMname': BSMname]), 5).equals(true)) {
+		   println("BSM created successfully")
+		   }
+	   }
+		else {
+			
+			println('failed')
+			}
+	    }
 }

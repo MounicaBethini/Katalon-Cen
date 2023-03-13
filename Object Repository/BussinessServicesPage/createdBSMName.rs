@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>nextButton</name>
+   <name>createdBSMName</name>
    <tag></tag>
-   <elementGuidId>d89a2330-fd87-40eb-a4b8-7fb5b98e2a38</elementGuidId>
+   <elementGuidId>8f80a4b6-2f63-433c-8012-c0a1d30e266e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div//input[@value='Next']</value>
+         <value>//a[@class='host-name']//child::span[text()='${BSMname}']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

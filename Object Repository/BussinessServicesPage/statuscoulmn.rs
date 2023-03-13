@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>nextButton</name>
+   <name>statuscoulmn</name>
    <tag></tag>
-   <elementGuidId>d89a2330-fd87-40eb-a4b8-7fb5b98e2a38</elementGuidId>
+   <elementGuidId>8ef597f6-09ae-446d-9a89-5482d0fae731</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div//input[@value='Next']</value>
+         <value>//span[text()='${BSMname}']//parent::a//parent::span//parent::div//following-sibling::div//child::span[text()='Enabled']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

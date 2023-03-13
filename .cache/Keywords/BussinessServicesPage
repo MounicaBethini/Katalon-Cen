@@ -1,56 +1,97 @@
 {
-  "keywordFileContentHash": "AC41ABF3D87C961C3FD73B6FFE8BD1CE",
+  "keywordFileContentHash": "BE75019950CDA4F4A8ED90B5B98D5ACA",
   "keywordClasses": [
     {
       "name": "BussinessServicesPage",
       "keywordMethods": [
         {
           "name": "createBSM",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "clickOnNewBSMButton",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "enterBSMName",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "enterBSMDescription",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "clickOncontactGroupdropdown",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": [
+            {
+              "name": "CG",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
         },
         {
           "name": "navigateToNextPage",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "addHostToBSM",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": [
+            {
+              "name": "hostname",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
+        },
+        {
+          "name": "selectthresholdTab",
+          "parameters": []
         },
         {
           "name": "addThresholdValues",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "clickOnFinishBtn",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
+        },
+        {
+          "name": "verifyBSMcreated",
+          "parameters": [
+            {
+              "name": "BSMname",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.Object",
+                "unresolvedClassName": "java.lang.Object",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ]
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
